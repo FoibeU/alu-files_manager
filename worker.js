@@ -21,7 +21,7 @@ fileQueue.process(async (job, done) => {
 
   const { userId } = job.data;
   if (!userId) {
-    done(new Error('Missing userId'));
+    done(new Error('Missings userId'));
   }
 
   console.log(fileId, userId);
